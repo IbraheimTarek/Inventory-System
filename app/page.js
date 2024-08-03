@@ -33,7 +33,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [itemName, setItemName] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState("");
 
   const uploadImage = async (file) => {
     const storageRef = ref(storage, `images/${file.name}`);
